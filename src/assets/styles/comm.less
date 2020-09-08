@@ -1,0 +1,29 @@
+@import './var.less';
+.global-layout{
+  height: 100vh;
+  width: 100vw;
+  overflow-y: scroll;
+  .global-sider {
+    overflow: scroll;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    width: 200px;
+    min-width: 200px;
+    max-width: 200px;
+    z-index: 1;
+    background-color: #fff;
+    box-shadow: 1px -5px 10px rgba(0,0,0,.2)
+  }
+  .global-content-layout{
+    padding-top: 64px;
+    padding-left: 210px;
+  }
+  .global-header{
+    background-color: @main-color;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+  }
+}
